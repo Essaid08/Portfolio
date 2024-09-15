@@ -1,0 +1,267 @@
+@import "../../vars.css";
+@import 'animate.css';
+
+.container {
+    padding-bottom: 100px;
+    padding-top: 80px;
+    position: relative;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    z-index: 1;
+    margin-right: 9%;
+    margin-left: 9%;
+}
+
+.container::before {
+    content: '<About>';
+    font-family: 'La Belle Aurore', cursive;
+    color: var(--color-third);
+    font-size: 18px;
+    position: absolute;
+    top: 50px;
+    animation: fadeIn 1s 1s backwards;
+    left: 0;
+    opacity: 0.5;
+    -webkit-text-fill-color: var(--hovernav-color);
+}
+
+.container::after {
+    content: '</About>';
+    font-family: 'La Belle Aurore', cursive;
+    color: var(--color-third);
+    font-size: 18px;
+    position: absolute;
+    bottom: 50px;
+    -webkit-text-fill-color: var(--hovernav-color);
+    left: 0;
+    animation: fadeIn 1s 1.9s backwards;
+    -webkit-text-fill-color: var(--hovernav-color);
+    opacity: 0.6;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: var(--color-text);
+    z-index: 1;
+    width: 50%;
+}
+
+.title {
+    font-size: clamp(30px, 6vw, 55px);
+    font-weight: 900;
+    margin-top: 70px;
+    margin-bottom: 60px;
+    font-family: var(--font-roboto);
+    background: linear-gradient(90deg,
+            rgba(255, 255, 255, 1) 40%,
+            rgba(255, 255, 255, 0) 140%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    position: relative;
+}
+
+.title::before {
+    content: '<h1>';
+    font-family: 'La Belle Aurore', cursive;
+    color: var(--color-third);
+    font-size: 18px;
+    position: absolute;
+    top: -30px;
+    left: 0;
+    opacity: 0.5;
+    -webkit-text-fill-color: var(--hovernav-color);
+    animation: fadeIn 1s 1.3s backwards;
+}
+
+.title::after {
+    content: '<h1/>';
+    font-family: 'La Belle Aurore', cursive;
+    color: var(--color-third);
+    font-size: 18px;
+    position: absolute;
+    bottom: -30px;
+    left: 0;
+    animation: fadeIn 1s 1.6s backwards;
+    -webkit-text-fill-color: var(--hovernav-color);
+    opacity: 0.6;
+}
+
+.description {
+    color: #eee9e9b9;
+    font-size: 16px;
+    line-height: 22px;
+    max-width: 100%;
+    font-family: var(--font-roboto);
+    margin-bottom: 15px;
+    animation: pulse 1s;
+
+    &:nth-of-type(1) {
+        animation-delay: 0.5s;
+    }
+
+    &:nth-of-type(2) {
+        animation-delay: 0.6s;
+    }
+
+    &:nth-of-type(3) {
+        animation-delay: 0.7s;
+    }
+}
+
+.cube-container {
+    position: relative;
+    height: 400px;
+    width: 50%;
+}
+
+.stage-cube-cont {
+    width: 100%;
+    height: 100%;
+    padding-top: 18%;
+    top: 30px;
+    margin-left: 0;
+    position: absolute;
+    right: -50px;
+    overflow: hidden;
+}
+
+.cubespinner {
+    animation-name: spincube;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 12s;
+    transform-style: preserve-3d;
+    transform-origin: 100px 100px 0;
+    margin-left: calc(50% - 100px);
+
+    div {
+        position: absolute;
+        width: 200px;
+        height: 200px;
+        border: 1px solid var(--color-third);
+        background: #5a49321c;
+        text-align: center;
+        font-size: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .face1 {
+        transform: translateZ(100px);
+        color: #dd0031;
+    }
+
+    .face2 {
+        transform: rotateY(90deg) translateZ(100px);
+        color: #f06529;
+    }
+
+    .face3 {
+        transform: rotateY(90deg) rotateX(90deg) translateZ(100px);
+        color: #28a4d9;
+    }
+
+    .face4 {
+        transform: rotateY(180deg) rotateZ(90deg) translateZ(100px);
+        color: #5ed4f4;
+    }
+
+    .face5 {
+        transform: rotateY(-90deg) rotateZ(90deg) translateZ(100px);
+        color: #efd81d;
+    }
+
+    .face6 {
+        transform: rotateX(-90deg) translateZ(100px);
+        color: #ec4d28;
+    }
+
+}
+
+@keyframes spincube {
+
+    from,
+    to {
+        transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+    }
+
+    16% {
+        transform: rotateY(-90deg);
+    }
+
+    33% {
+        transform: rotateY(-90deg) rotateZ(90deg);
+    }
+
+    50% {
+        transform: rotateY(-180deg) rotateZ(90deg);
+    }
+
+    60% {
+        transform: rotateY(-270deg) rotateZ(90deg);
+    }
+
+    83% {
+        transform: rotateX(90deg) rotateZ(90deg);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        padding-top: 70px;
+        margin-top: 100px;
+        padding-bottom: 0;
+    }
+
+    .content {
+        width: 100%;
+        align-items: center;
+    }
+
+    .title {
+        margin-bottom: 50px;
+        margin-top: 50px;
+    }
+
+    .description {
+        max-width: 100%;
+        font-size: 13px;
+        line-height: 20px;
+        font-weight: normal;
+        text-align: center;
+        margin: 5px 0;
+    }
+
+    .container::before {
+        top: -30px;
+    }
+
+    .container::after {
+        bottom: 50px;
+    }
+
+    .cube-container {
+        width: 100%;
+    }
+
+    .stage-cube-cont {
+        width: 100%;
+        top: -0px;
+        right: -5px;
+        padding-top: 20%;
+
+    }
+
+    .cubespinner {
+        div {
+            font-size: 80px;
+            height: 200px;
+            width: 200px;
+        }
+    }
+}

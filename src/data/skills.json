@@ -1,0 +1,62 @@
+[
+    {
+        "title": "React",
+        "imageSrc": "skills/react.png",
+        "style" : {"shadow-color": "94, 212, 244"}
+    },
+    {
+        "title": "Node",
+        "imageSrc": "skills/node.png",
+        "style" : {"shadow-color": "108, 194, 74"}
+    },
+    {
+        "title": "GraphQL",
+        "imageSrc": "skills/graphql.png",
+        "style" : {"shadow-color": "229, 53, 171"}
+    },
+    {
+        "title": "MongoDB",
+        "imageSrc": "skills/mongodb.png",
+        "style" : {"shadow-color": "77, 179, 61"}
+    },
+    {
+        "title": "Figma",
+        "imageSrc": "skills/figma.png",
+        "style" : {"shadow-color": "255, 114, 98"}
+    },
+    {
+        "title": "C++",
+        "imageSrc": "skills/C++.png",
+        "style" : {"shadow-color": "94, 151, 208"}
+    },
+    {
+        "title": "PostgreSQL",
+        "imageSrc": "skills/Postgresql.png",
+        "style" : {"shadow-color": "0, 139, 185"}
+    },
+    {
+        "title": "Sass",
+        "imageSrc": "skills/Sacss.png",
+        "style" : {"shadow-color": "204, 102, 153"}
+    },
+    {
+        "title": "Tailwind Css",
+        "imageSrc": "skills/tailwind.png",
+        "style" : {"shadow-color": "56, 189, 248"}
+    },
+    {
+        "title": "TypeScript",
+        "imageSrc": "skills/typescript.png",
+        "style" : {"shadow-color": "49, 120, 198"}
+    },
+    {
+        "title": "Next.js",
+        "imageSrc": "skills/nextjs.png",
+        "style" : {"shadow-color": "255 , 255 , 255"}
+    },
+    {
+        "title": "GitHub",
+        "imageSrc": "skills/github.png",
+        "style" : {"shadow-color": "156, 163, 175"}
+    }
+]

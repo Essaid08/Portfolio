@@ -1,0 +1,205 @@
+@import "../../vars.css";
+@import "animate.css";
+
+.container {
+    padding-bottom: 100px;
+    padding-top: 120px;
+    position: relative;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    z-index: 1;
+    margin-right: 9%;
+    margin-left: 9%;
+}
+
+.container::before {
+    content: "<Skills>";
+    font-family: "La Belle Aurore", cursive;
+    color: var(--color-third);
+    font-size: 18px;
+    position: absolute;
+    top: 50px;
+    animation: fadeIn 1s 1s backwards;
+    left: 0;
+    opacity: 0.5;
+    -webkit-text-fill-color: var(--hovernav-color);
+}
+
+.container::after {
+    content: "</Skills>";
+    font-family: "La Belle Aurore", cursive;
+    color: var(--color-third);
+    font-size: 18px;
+    position: absolute;
+    bottom: 50px;
+    -webkit-text-fill-color: var(--hovernav-color);
+    left: 0;
+    animation: fadeIn 1s 1.9s backwards;
+    -webkit-text-fill-color: var(--hovernav-color);
+    opacity: 0.6;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: var(--color-text);
+    z-index: 1;
+    width: 45%;
+}
+
+.title {
+    font-size: clamp(30px, 6vw, 40px);
+    font-weight: 900;
+    margin-bottom: 60px;
+    font-family: var(--font-roboto);
+    background: linear-gradient(90deg, white 40%, rgba(255, 255, 255, 0) 140%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    position: relative;
+}
+
+.title::before {
+    content: "<h1>";
+    font-family: "La Belle Aurore", cursive;
+    color: var(--color-third);
+    font-size: 18px;
+    position: absolute;
+    top: -30px;
+    left: 0;
+    opacity: 0.5;
+    -webkit-text-fill-color: var(--hovernav-color);
+    animation: fadeIn 1s 1.3s backwards;
+}
+
+.title::after {
+    content: "<h1/>";
+    font-family: "La Belle Aurore", cursive;
+    color: var(--color-third);
+    font-size: 18px;
+    position: absolute;
+    bottom: -30px;
+    left: 0;
+    animation: fadeIn 1s 1.6s backwards;
+    -webkit-text-fill-color: var(--hovernav-color);
+    opacity: 0.6;
+}
+
+.description {
+    color: #eee9e9b9;
+    font-size: 14px;
+    line-height: 22px;
+    max-width: 75ch;
+    font-family: var(--font-roboto);
+    margin-bottom: 15px;
+    animation: pulse 1s;
+}
+
+.description span {
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.description a {
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.description:nth-of-type(1) {
+    animation-delay: 0.5s;
+}
+
+.description:nth-of-type(2) {
+    animation-delay: 0.6s;
+}
+
+.description:nth-of-type(3) {
+    animation-delay: 0.7s;
+}
+
+.containerSkills {
+    width: 65%;
+    display: grid;
+    gap: 15px;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    padding: 32px 0 32px 32px;
+}
+
+.skillItem {
+    filter: drop-shadow(0 4px 3px rgb(0 0 0 / 0.07)) drop-shadow(0 2px 2px rgb(0 0 0 / 0.06));
+    transition-duration: 500ms;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-radius: 8px;
+}
+
+.skillItem:hover {
+    transform: scale(1.05);
+}
+
+.skillItem img {
+    width: 70px;
+    height: 70px;
+    margin: 0 auto;
+}
+
+.skillItem p {
+    margin-top: 16px;
+    text-align: center;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        padding-top: 70px;
+        margin-top: 100px;
+        padding-bottom: 70px;
+    }
+
+    .content {
+        width: 100%;
+        align-items: center;
+    }
+
+    .title {
+        margin-top: -50px;
+        margin-bottom: 60px;
+    }
+
+    .description {
+        max-width: 100%;
+        font-size: 13px;
+        line-height: 20px;
+        font-weight: normal;
+        text-align: center;
+        margin: 5px 0;
+    }
+
+    .container::before {
+        top: -80px;
+    }
+
+    .container::after {
+        bottom: 50px;
+    }
+
+    .containerSkills {
+        width: 100%;
+        padding: 32px 0;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .skillItem img {
+        width: 60px;
+        height: 60px;
+        margin: 0 auto;
+    }
+}

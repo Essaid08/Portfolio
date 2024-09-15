@@ -1,0 +1,49 @@
+$primary-color: var(--color-third );
+
+@import'./vars.css';
+@import 'animate.css';
+@import 'loaders.css/src/animations/pacman.scss';
+
+
+.App {
+    background-color: var(--color-bg);
+    width: 100%;
+    height: 100%;
+    color: white;
+    scroll-behavior: smooth;
+    /* scroll-snap-type:y mandatory;  */
+    overflow-y: auto;
+    overflow-x: hidden;
+    scrollbar-width: none;
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+.home {
+    height: 100vh;
+}
+
+.loader-hidden {
+    display: none;
+}
+
+.loader-active {
+    display: block;
+    position: fixed;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    height: 50px;
+    width: 50px;
+    animation: fadeOut 1s 1s;
+    animation-fill-mode: forwards;
+}
+
+.loading-background {
+    height: 100vh;
+    width: 100vw;
+}

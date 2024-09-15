@@ -1,0 +1,57 @@
+[
+    {
+        "title": "CodeFlow",
+        "imageSrc": "projects/codeFlow.PNG",
+        "description": "CodeFlow is a developer-centric platform inspired by StackOverflow, designed to facilitate knowledge sharing, problem-solving, and networking within the developer community. This web application allows developers to ask and answer questions, browse job listings, and create an account to personalize their experience.",
+        "skills": [
+            "TypeScript",
+            "React",
+            "Next.js",
+            "TailwindCss",
+            "Clerk"
+        ],
+        "demo": "https://code-flow-ten.vercel.app/",
+        "source": "https://github.com/Essaid08/CodeFlow",
+        "misssion" : "Fronte-end , Designe , Back-end"
+    },
+    {
+        "title": "Project Charik.fr clone ",
+        "imageSrc": "projects/charik2.PNG",
+        "description": "This project is a React-based recreation of parts of the Charik website, designed to assess proficiency in React and frontend development. The project demonstrates skills in building responsive and user-friendly web applications using modern frontend technologies.",
+        "skills": [
+            "React",
+            "TailwindCss",
+            "Vite"
+        ],
+        "demo": "https://charik-frontend-interview-assaid-bouhenni.vercel.app/",
+        "source": "https://github.com/Essaid08/Charik-Frontend-Interview-Assaid-bouhenni" ,
+        "misssion" : "Front-end , Designe , Optimization "
+    },
+    {
+        "title": "SummarizerBot",
+        "imageSrc": "projects/bot.PNG",
+        "description": "This React application empowers you to quickly grasp the essence of any web content using the power of GPT-4. Simply provide a URL, and our application leverages the RapidAPI platform to seamlessly integrate GPT-4's capabilities. tech stacks : React-vite , Redux , TailwindCss , rapidApi.",
+        "skills": [
+            "React",
+            "Vite",
+            "TailwindCss",
+            "RapidApi"
+        ],
+        "demo": "https://summarizerb-bot.vercel.app/",
+        "source": "https://github.com/Essaid08/summarizer-bot" ,
+        "misssion" : "Fronte-end , system analysis , Back-end , Designe "
+    },
+    {
+        "title": "PulsePricing",
+        "imageSrc": "projects/pulse.PNG",
+        "description": "About this is a front-end practice challenge to make a responsive design for the pulse website pricing page using html and css only with min mediaqueries . .",
+        "skills": [
+            "Css",
+            "JavaScript",
+            "Html"
+        ],
+        "demo": "https://pulse-pricing-clone.vercel.app/",
+        "source": "https://github.com/Essaid08/pulse-pricing-clone",
+        "misssion" : "Fronte-end , Designe"
+    }
+]

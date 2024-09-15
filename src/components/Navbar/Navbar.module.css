@@ -1,0 +1,126 @@
+@import "../../vars.css";
+@import'animate.css';
+
+
+header {
+    
+}
+
+.navbar {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 0;
+    z-index: 2;
+    margin: 0 9%;
+}
+
+.title {
+    font-size: 30px;
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--color-text);
+    animation: bounce 1s .1s backwards;
+}
+
+.title:hover {
+    color: var(--hovernav-color);
+}
+
+.menu {
+    display: flex;
+}
+
+.menuitems {
+    display: flex;
+    gap: 47px;
+    list-style: none;
+}
+
+.menuitems a {
+    text-decoration: none;
+    font-size: 21px;
+    color: var(--color-text);
+    transition: 0.3s ease-in-out;
+    position: relative;
+    text-transform: uppercase;
+    animation: shakeX 1s backwards;
+}
+
+.menuitems a:hover {
+    color: var(--hovernav-color);
+    font-weight: 600;
+    animation: rubberBand 1s 1s forwards;
+}
+
+.menuitems a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background-color: var(--hovernav-color);
+    transition: 0.15s ease-in-out;
+}
+
+.menuitems a:hover::after {
+    width: 100%;
+}
+
+.menuBtn {
+    display: none;
+}
+
+@media screen and (max-width: 940px) {
+    .menuitems {
+        gap: 38px;
+    }
+
+    .menuitems a {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 830px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .menu {
+        position: absolute;
+        right: -50px;
+        margin-right: 10%;
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 11px;
+        z-index: 3;
+    }
+
+    .menuBtn {
+        display: block;
+        cursor: pointer;
+    }
+
+    .menuitems {
+        display: none;
+        flex-direction: column;
+        gap: 13px;
+        align-items: center;
+        border-radius: 10px;
+        background: var(--color-secondary);
+        background: linear-gradient(0deg,
+                rgb(49, 39, 27, 0.2) 0%,
+                rgba(65, 50, 25, 0.7) 100%);
+
+        padding: 24px 33px;
+        box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.25);
+    }
+
+    .menuOpen {
+        display: flex;
+        z-index: 1;
+    }
+}
