@@ -1,5 +1,21 @@
 [
     {
+        "title": "BrilexDz",
+        "imageSrc": "projects/Brilex.PNG",
+        "description": "Brilex is a React-based product showcase platform designed for Garden Clean MESTAR, an Algerian company specializing in industrial detergents and hygiene products. The platform allows users to browse, filter, and explore a wide range of products by categories such as disinfectants, insecticides, and more. With a seamless UI built using Tailwind CSS and powered by the Context API for global state management, Brilex provides an intuitive shopping experience.",
+        "skills": [
+            "React",
+            "React",
+            "TailwindCss",
+            "Vite",
+            "Email.js"
+
+        ],
+        "demo": "https://brilex-dz.vercel.app/",
+        "source": "https://github.com/Essaid08/Brilex-de",
+        "misssion" : "Fronte-end , Designe , Back-end"
+    },
+    {
         "title": "CodeFlow",
         "imageSrc": "projects/codeFlow.PNG",
         "description": "CodeFlow is a developer-centric platform inspired by StackOverflow, designed to facilitate knowledge sharing, problem-solving, and networking within the developer community. This web application allows developers to ask and answer questions, browse job listings, and create an account to personalize their experience.",

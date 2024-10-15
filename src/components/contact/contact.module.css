@@ -2,7 +2,6 @@
 @import "animate.css";
 
 .container {
-    padding-bottom: 100px;
     padding-top: 120px;
     position: relative;
     margin-top: 10px;
@@ -190,6 +189,11 @@ textarea {
     min-height: 150px;
     box-sizing: border-box;
     position: relative;
+}
+
+input:focus , textarea:focus { 
+    background: var(--color-dark);
+    outline: none; /* Remove default outline */
 }
 
 .submitli {

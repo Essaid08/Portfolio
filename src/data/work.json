@@ -3,6 +3,12 @@
         "role": "Software Engineer Intern",
         "company": "Radical AI",
         "desc": "As a Software Developer at Radical AI, I am leveragingtechnologies such such as OpenAI, Node.js and React to develop ReX, an AI Coach who serves as a steadfast career companion for learners, offering personalized coaching, mentorship, and support throughout the various phases of their career lifecycle",
-        "date" : "Mai 2024 - Sep 2024"
+        "date": "Mai 2024 - Sep 2024"
+    },
+    {
+        "role": "Front End Developer",
+        "company": " Independent Contractor",
+        "desc": "Developed a real estate booking plat form using the **MERNstack**,featuring a responsive front end in **React.js** and a secure backend with **Node.js**, **Express**, and **MongoDB**, also  Collaborated with two back-end developers to integrate booking functionality and advanced property filtering, enhancinguser experience.",
+        "date": "Feb 2023 – Dec 2023"
     }
 ]

@@ -2,14 +2,13 @@ import { useEffect, useState } from 'react';
 import styles from './Navbar.module.css'
 import { getImageUrl } from '../../utils'
 
-
 export const Navbar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false)
     const [loading, setLoading] = useState(true);
     useEffect(() => {
         setTimeout(() => {
             setLoading(false)
-        }, 600)
+        }, 700)
     }, [])
 
     return (
@@ -23,6 +22,7 @@ export const Navbar = () => {
 
                         <nav className={styles.navbar}>
                             <a href="/" className={styles.title}>SaidWebfolio</a>
+                            
                             <div className={styles.menu}>
                                 <img
                                     onClick={() => setIsMenuOpen(!isMenuOpen)}

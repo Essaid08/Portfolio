@@ -2,9 +2,6 @@
 @import'animate.css';
 
 
-header {
-    
-}
 
 .navbar {
     position: relative;
@@ -30,6 +27,7 @@ header {
 
 .menu {
     display: flex;
+
 }
 
 .menuitems {
@@ -102,12 +100,13 @@ header {
     .menuBtn {
         display: block;
         cursor: pointer;
+        z-index: 4;
     }
 
     .menuitems {
         display: none;
         flex-direction: column;
-        gap: 13px;
+        gap: 25px;
         align-items: center;
         border-radius: 10px;
         background: var(--color-secondary);
@@ -115,7 +114,7 @@ header {
                 rgb(49, 39, 27, 0.2) 0%,
                 rgba(65, 50, 25, 0.7) 100%);
 
-        padding: 24px 33px;
+        padding: 40px 60px;
         box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.25);
     }
 

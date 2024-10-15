@@ -5,6 +5,7 @@ import styles from './expeeince.module.css';
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
 import { MdWork } from 'react-icons/md';
 import work from "../../data/work.json"
+import ScrollAnimation from 'react-animate-on-scroll';
 
 
 export const Experience = () => {
@@ -25,10 +26,18 @@ export const Experience = () => {
                         <LetterAnimation strArray={['W', 'o', 'r', 'k', ' ', 'E', 'x', 'p', 'e', 'r', 'i', 'e', 'n', 'c', 'e']} letterClass={letterClass} index={1} />
                     </h1>
 
-                    <VerticalTimeline>
+                    <VerticalTimeline
+                    className={styles.timeline}>
                         {
                             work.map(work => (
+                                <ScrollAnimation
+                                    animateOnce
+                                    duration={1.5}
+                                    animateIn='animate__slideInRight'
+                                    animateOut='animate__rollOut'
+                                    key={work.date}>
                                     <VerticalTimelineElement
+                                        className={styles.vertical}
                                         key={work.date}
                                         className={styles.item}
                                         contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
@@ -42,6 +51,8 @@ export const Experience = () => {
                                             {work.desc}
                                         </p>
                                     </VerticalTimelineElement>
+                                </ScrollAnimation>
+
                             ))}
                     </VerticalTimeline>
                 </div>

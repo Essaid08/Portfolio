@@ -4,7 +4,7 @@ import LetterAnimation from '../../components/letter-animation/LetterAnimation';
 import projects from "../../data/projects.json";
 import { getImageUrl } from '../../utils';
 import { FaPersonCircleQuestion, FaEarthAmericas } from "react-icons/fa6";
-
+import ScrollAnimation from 'react-animate-on-scroll';
 
 const Project = () => {
 
@@ -31,41 +31,49 @@ const Project = () => {
             <div className={styles.list}>
                 {
                     listProjects.map((value, key) => (
-                        <div key={key} className={styles.item}>
-                            <div className={styles.images}>
-                                <a  href={value.demo} target='_blank'>
-                                    <img src={getImageUrl(value.imageSrc)} alt={value.title} />
-                                </a>
-                            </div>
-                            <div className={styles.itemContent}>
-                                <h3>{value.title}</h3>
-                                <div className={styles.des}>{value.description}</div>
-                                <div className={styles.mission}>
-                                    <div><FaPersonCircleQuestion /></div>
-                                    <div>
-                                        <h4>Mission</h4>
-                                        <div className={styles.des}>{value.misssion}</div>
-                                    </div>
+                        <ScrollAnimation
+                            animateOnce
+                            duration={1.5}
+                            animateIn='animate__rollIn'
+                            animateOut='animate__rollOut'
+                            key={key}>
+                            <div className={styles.item}>
+                                <div className={styles.images}>
+                                    <a href={value.demo} target='_blank'>
+                                        <img src={getImageUrl(value.imageSrc)} alt={value.title} />
+                                    </a>
                                 </div>
-                                <div className={styles.mission}>
-                                    <div><FaEarthAmericas /></div>
-                                    <div>
-                                        <h4>Tech Stacks</h4>
-                                        <div className={styles.des}>
-                                            {
-                                                value.skills.map((skill, id) => (
-                                                    <span key={id * 3} id={skill.toLowerCase()}>{skill}</span>
-                                                ))
-                                            }
+                                <div className={styles.itemContent}>
+                                    <h3>{value.title}</h3>
+                                    <div className={styles.desc}>{value.description}</div>
+                                    <div className={styles.mission}>
+                                        <div><FaPersonCircleQuestion /></div>
+                                        <div>
+                                            <h4>Mission</h4>
+                                            <div className={styles.des}>{value.misssion}</div>
                                         </div>
                                     </div>
-                                </div>
-                                <div className={styles.btns}>
-                                    <button><a href={value.demo} target='_blank'>Demo</a></button>
-                                    <button><a href={value.source} target='_blank'>Source</a></button>
+                                    <div className={styles.mission}>
+                                        <div><FaEarthAmericas /></div>
+                                        <div>
+                                            <h4>Tech Stacks</h4>
+                                            <div className={styles.des}>
+                                                {
+                                                    value.skills.map((skill, id) => (
+                                                        <span key={id * 3} id={skill.toLowerCase()}>{skill}</span>
+                                                    ))
+                                                }
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className={styles.btns}>
+                                        <button><a href={value.demo} target='_blank'>Demo</a></button>
+                                        <button><a href={value.source} target='_blank'>Source</a></button>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
+                        </ScrollAnimation>
+
                     ))
                 }
             </div>
