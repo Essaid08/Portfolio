@@ -12,8 +12,8 @@ export const Hero = () => {
 
     const downloadPDF = () => {
         const link = document.createElement('a');
-        link.href = '/public/'; 
-        link.setAttribute('download', 'YourFileName.pdf'); 
+        link.href = '/public/Said-web-2years.pdf'; 
+        link.setAttribute('download', 'Said-web-2years.pdf'); 
         document.body.appendChild(link); 
         link.click(); 
         link.parentNode.removeChild(link); 
