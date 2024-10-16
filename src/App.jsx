@@ -11,6 +11,7 @@ import { Experience } from "./components/experience/Experience";
 import Footer from "./components/footer/Footer";
 
 
+
 function App() {
   const [loading, setLoading] = useState(true);
 

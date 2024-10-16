@@ -20,8 +20,8 @@ export const Skill = () => {
         <section>
             <ScrollAnimation
                 animateOnce
-                duration={1}
-                animateIn='animate__fadeInUp'
+                duration={6}
+                animateIn='animate__fadeIn'
             >
                 <div className={styles.container} id='skill'>
                     <div className={styles.content}>

@@ -106,8 +106,9 @@ export const Contact = () => {
     return (
         <ScrollAnimation
             animateOnce
-            duration={1.5}
-            animateIn='animate__slideInUp'
+            duration={6}
+            animateIn='animate__fadeIn'
+
         >
             <section className={styles.container} id="contact">
                 <div className={styles.content}>

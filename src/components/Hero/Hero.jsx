@@ -12,11 +12,11 @@ export const Hero = () => {
 
     const downloadPDF = () => {
         const link = document.createElement('a');
-        link.href = '/public/Said-web-2years.pdf'; 
-        link.setAttribute('download', 'Said-web-2years.pdf'); 
-        document.body.appendChild(link); 
-        link.click(); 
-        link.parentNode.removeChild(link); 
+        link.href = '/Said-web-2years.pdf';
+        link.setAttribute('download', 'Said-web-2years.pdf');
+        document.body.appendChild(link);
+        link.click();
+        link.parentNode.removeChild(link);
     };
 
     useEffect(() => {
@@ -44,6 +44,7 @@ export const Hero = () => {
                                 <LetterAnimation letterClass={letterClass} strArray={nameArray} index={1} />
                             </h1>
                             <ScrollAnimation
+                                offset={0}
                                 animateOnce
                                 className={styles.btnAnima}
                                 animateIn='animate__fadeInLeft'
@@ -56,12 +57,13 @@ export const Hero = () => {
                                     onClick={downloadPDF}
                                     href="mailto:assaidbouhenni3@gmail.com"
                                     className={styles.contactBtn}>
-                                        Download Cv
+                                    Download Cv
                                 </button>
                             </ScrollAnimation>
                         </div>
                         <div className={styles.divImg}>
                             <ScrollAnimation
+                                offset={0}
                                 animateOnce
                                 duration={3}
                                 animateIn='animate__fadeInRight'>

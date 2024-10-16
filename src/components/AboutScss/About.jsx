@@ -16,9 +16,10 @@ export const About = () => {
 
     return (
         <ScrollAnimation
+
             animateOnce
-            duration={1}
-            animateIn='animate__fadeInUp'
+            duration={5}
+            animateIn='animate__fadeIn'
         >
             <section className='container' id='about'>
                 <div className='content'>

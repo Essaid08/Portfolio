@@ -18,16 +18,24 @@ const Project = () => {
     }, [])
     return (
         <section className={styles.container} id='projects'>
-            <div className={styles.content}>
-                <h1 className={styles.title}>
-                    <LetterAnimation strArray={['M', 'y', '', 'W', 'o', 'r', 'k', ' ', '&', ' ', 'P', 'r', 'o', 'j', 'e', 'c', 't', 's']} letterClass={letterClass} index={1} />
-                </h1>
-                <p className={styles.description}>
-                    Step into my creative world! Explore a diverse portfolio showcasing my technical expertise and
-                    passion for problem-solving. Each project reflects a unique challenge overcome and a valuable lesson learned. Dive in, spark your curiosity,
-                    and let's explore how we can collaborate to bring your vision to life.
-                </p>
-            </div>
+            <ScrollAnimation
+                animateOnce
+                duration={1.5}
+                animateIn='animate__rollIn'
+                animateOut='animate__rollOut'
+            >
+                <div className={styles.content}>
+                    <h1 className={styles.title}>
+                        <LetterAnimation strArray={['M', 'y', '', 'W', 'o', 'r', 'k', ' ', '&', ' ', 'P', 'r', 'o', 'j', 'e', 'c', 't', 's']} letterClass={letterClass} index={1} />
+                    </h1>
+                    <p className={styles.description}>
+                        Step into my creative world! Explore a diverse portfolio showcasing my technical expertise and
+                        passion for problem-solving. Each project reflects a unique challenge overcome and a valuable lesson learned. Dive in, spark your curiosity,
+                        and let's explore how we can collaborate to bring your vision to life.
+                    </p>
+                </div>
+            </ScrollAnimation>
+
             <div className={styles.list}>
                 {
                     listProjects.map((value, key) => (
