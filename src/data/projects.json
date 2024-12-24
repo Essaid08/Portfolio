@@ -1,5 +1,22 @@
 [
     {
+        "title": "LNPAGE",
+        "imageSrc": "projects/LNPAGE.PNG",
+        "description": "This project is a full-stack web application that provides an interactive way to test algorithms such as Palindromes, Perfect Numbers, Fibonacci Sequence, and more.",
+        "skills": [
+            "React-Vite",
+            "Node.js",
+            "TailwindCss",
+            "Express.js",
+            "Docker",
+            "vitest"
+
+        ],
+        "demo": "https://ln-page-frontend.vercel.app",
+        "source": "https://github.com/Essaid08/ln_page-frontend",
+        "misssion" : "Fronte-end , Designe , Back-end , Dockerisation "
+    },
+    {
         "title": "BrilexDz",
         "imageSrc": "projects/Brilex.PNG",
         "description": "Brilex is a React-based product showcase platform designed for Garden Clean MESTAR, an Algerian company specializing in industrial detergents and hygiene products. The platform allows users to browse, filter, and explore a wide range of products by categories such as disinfectants, insecticides, and more. With a seamless UI built using Tailwind CSS and powered by the Context API for global state management, Brilex provides an intuitive shopping experience.",
