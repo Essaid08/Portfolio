@@ -2,89 +2,101 @@
     {
         "title": "LNPAGE",
         "imageSrc": "projects/LNPAGE.png",
-        "description": "This project is a full-stack web application that provides an interactive way to test algorithms such as Palindromes, Perfect Numbers, Fibonacci Sequence, and more.",
-        "skills": [
-            "React-Vite",
-            "Node.js",
-            "TailwindCss",
-            "Express.js",
-            "Docker",
-            "vitest"
-
-        ],
+        "description": "A full-stack web application that provides an interactive way to test algorithms such as Palindromes, Perfect Numbers, Fibonacci Sequence, and more. Built with React, Node.js, Tailwind CSS, and Docker.",
+        "skills": ["React-Vite", "Node.js", "TailwindCss", "Express.js", "Docker", "vitest"],
         "demo": "https://ln-page-frontend.vercel.app",
         "source": "https://github.com/Essaid08/ln_page-frontend",
-        "misssion" : "Fronte-end , Designe , Back-end , Dockerisation "
+        "mission": "Front-end, Design, Back-end, Dockerization"
     },
     {
-        "title": "BrilexDz",
+        "title": "BrilexDz Product Showcase Platform",
         "imageSrc": "projects/Brilex.PNG",
-        "description": "Brilex is a React-based product showcase platform designed for Garden Clean MESTAR, an Algerian company specializing in industrial detergents and hygiene products. The platform allows users to browse, filter, and explore a wide range of products by categories such as disinfectants, insecticides, and more. With a seamless UI built using Tailwind CSS and powered by the Context API for global state management, Brilex provides an intuitive shopping experience.",
-        "skills": [
-            "React",
-            "React",
-            "TailwindCss",
-            "Vite",
-            "Email.js"
-
-        ],
+        "description": "A React-based product showcase platform for Garden Clean MESTAR, featuring product filtering by categories such as disinfectants and insecticides. Built with Tailwind CSS and Context API for state management.",
+        "skills": ["React", "TailwindCss", "Vite", "Email.js"],
         "demo": "https://brilex-dz.vercel.app/",
         "source": "https://github.com/Essaid08/Brilex-de",
-        "misssion" : "Fronte-end , Designe , Back-end"
+        "mission": "Front-end, Design, Back-end"
+    },
+    {
+        "title": "Enterprise POS Platform",
+        "imageSrc": "projects/ms-pos.jpg",
+        "description": "A comprehensive Point-of-Sale management system serving over 10k daily users. Includes secure role and region-based access control, customizable dashboards, and data export options.",
+        "skills": ["React", "Express.js", "PostgreSQL", "Redis", "JavaScript", "Material UI", "Docker"],
+        "demo": "",
+        "source": "",
+        "mission": "Full-stack development, API design, dashboard UI"
+    },
+    {
+        "title": "Smart SIM Allocation System",
+        "imageSrc": "projects/ssa.png",
+        "description": "A high-performance SIM management platform with real-time updates, caching, and state synchronization. Integrated Elasticsearch for optimized queries and Docker/Kubernetes for scalability.",
+        "skills": ["Java Spring Boot", "Next.js", "TypeScript", "Redis", "Elasticsearch", "Docker", "Kubernetes"],
+        "demo": "",
+        "source": "",
+        "mission": "System architecture, Front-end integration , optimization"
+    },
+    {
+        "title": "AI Identity Verification Platform",
+        "imageSrc": "projects/liveness.png",
+        "description": "A scalable Nest.js backend integrating AI microservices for face detection, OCR, and NFC processing. Includes JWT-secured access, vector similarity search with Milvus, and a Next.js dashboard for monitoring.",
+        "skills": ["Nest.js", "FastAPI", "Redis", "Milvus", "Elasticsearch", "Docker", "PostgreSQL", "Prisma", "Next.js", "CI/CD"],
+        "demo": "https://liveness-dashboard.vercel.app/login",
+        "source": "https://liveness-dashboard.vercel.app/login",
+        "mission": "Back-end, AI integration, Dashboard, DevOps"
+    },
+    {
+        "title": "Multi-Store E-commerce Management System",
+        "imageSrc": "projects/ec.png",
+        "description": "A Nest.js-based platform to manage multiple online stores with centralized product, order, and user data. Features Redis caching, Prisma ORM, and JWT-secured role-based access.",
+        "skills": ["Nest.js", "Next.js","Prisma", "React", "TypeScript", "PostgreSQL", "Redis", "Docker"],
+        "demo": "https://github.com/Essaid08/multi-store-ec",
+        "source": "https://github.com/Essaid08/multi-store-ec",
+        "mission": "Full-stack development, Authentication, Optimization , design"
     },
     {
         "title": "CodeFlow",
         "imageSrc": "projects/codeFlow.PNG",
-        "description": "CodeFlow is a developer-centric platform inspired by StackOverflow, designed to facilitate knowledge sharing, problem-solving, and networking within the developer community. This web application allows developers to ask and answer questions, browse job listings, and create an account to personalize their experience.",
-        "skills": [
-            "TypeScript",
-            "React",
-            "Next.js",
-            "TailwindCss",
-            "Clerk"
-        ],
+        "description": "A developer platform inspired by StackOverflow, allowing developers to ask and answer questions, browse jobs, and create accounts for a personalized experience. Built using TypeScript, Next.js, and Clerk authentication.",
+        "skills": ["TypeScript", "React", "Next.js", "TailwindCss", "Clerk"],
         "demo": "https://code-flow-ten.vercel.app/",
         "source": "https://github.com/Essaid08/CodeFlow",
-        "misssion" : "Fronte-end , Designe , Back-end"
+        "mission": "Front-end, Design, Back-end , Authentication"
     },
     {
-        "title": "Project Charik.fr clone ",
+        "title": "🪟 BOMARE - Windows Distribution Guide",
+        "imageSrc": "projects/bomare.png",
+        "description": "A detailed build and distribution guide for creating Windows executables and installers using Node.js and Electron for the BOMARE Impedance Measurement System. Includes setup for building, packaging, troubleshooting, and code signing, ensuring a professional and user-friendly installation process.",
+        "skills": ["Node.js", "Electron", "Windows", "Automation", "CI/CD", "Batch Scripting"],
+        "demo": "https://bomare-ui.vercel.app/",
+        "source": "https://github.com/Essaid08/Electron-Bomare",
+        "mission": "Back-end, Front-end, Build Automation, Distribution Engineering"
+    },
+    
+    {
+        "title": "Project Charik.fr Clone",
         "imageSrc": "projects/charik2.PNG",
-        "description": "This project is a React-based recreation of parts of the Charik website, designed to assess proficiency in React and frontend development. The project demonstrates skills in building responsive and user-friendly web applications using modern frontend technologies.",
-        "skills": [
-            "React",
-            "TailwindCss",
-            "Vite"
-        ],
+        "description": "A React-based recreation of the Charik website showcasing strong frontend development and responsive design skills using React, Tailwind, and Vite.",
+        "skills": ["React", "TailwindCss", "Vite"],
         "demo": "https://charik-frontend-interview-assaid-bouhenni.vercel.app/",
-        "source": "https://github.com/Essaid08/Charik-Frontend-Interview-Assaid-bouhenni" ,
-        "misssion" : "Front-end , Designe , Optimization "
+        "source": "https://github.com/Essaid08/Charik-Frontend-Interview-Assaid-bouhenni",
+        "mission": "Front-end, Design, Optimization"
     },
     {
         "title": "SummarizerBot",
         "imageSrc": "projects/bot.PNG",
-        "description": "This React application empowers you to quickly grasp the essence of any web content using the power of GPT-4. Simply provide a URL, and our application leverages the RapidAPI platform to seamlessly integrate GPT-4's capabilities. tech stacks : React-vite , Redux , TailwindCss , rapidApi.",
-        "skills": [
-            "React",
-            "Vite",
-            "TailwindCss",
-            "RapidApi"
-        ],
+        "description": "A React app that uses GPT-4 via RapidAPI to summarize articles from URLs. Users can easily extract key points and summaries using a modern, minimal UI.",
+        "skills": ["React", "Vite", "TailwindCss", "RapidApi"],
         "demo": "https://summarizerb-bot.vercel.app/",
-        "source": "https://github.com/Essaid08/summarizer-bot" ,
-        "misssion" : "Fronte-end , system analysis , Back-end , Designe "
+        "source": "https://github.com/Essaid08/summarizer-bot",
+        "mission": "Front-end, System analysis, Back-end, Design"
     },
     {
         "title": "PulsePricing",
         "imageSrc": "projects/pulse.PNG",
-        "description": "About this is a front-end practice challenge to make a responsive design for the pulse website pricing page using html and css only with min mediaqueries . .",
-        "skills": [
-            "Css",
-            "JavaScript",
-            "Html"
-        ],
+        "description": "A responsive front-end clone of Pulse’s pricing page built using HTML and CSS with minimal media queries for clean adaptability across devices.",
+        "skills": ["Css", "JavaScript", "Html"],
         "demo": "https://pulse-pricing-clone.vercel.app/",
         "source": "https://github.com/Essaid08/pulse-pricing-clone",
-        "misssion" : "Fronte-end , Designe"
+        "mission": "Front-end, Design"
     }
 ]

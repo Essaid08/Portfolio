@@ -58,7 +58,7 @@ const Project = () => {
                                         <div><FaPersonCircleQuestion /></div>
                                         <div>
                                             <h4>Mission</h4>
-                                            <div className={styles.des}>{value.misssion}</div>
+                                            <div className={styles.des}>{value.mission}</div>
                                         </div>
                                     </div>
                                     <div className={styles.mission}>
