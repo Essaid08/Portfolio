@@ -10,9 +10,9 @@
         "style" : {"shadow-color": "108, 194, 74"}
     },
     {
-        "title": "GraphQL",
-        "imageSrc": "skills/graphql.png",
-        "style" : {"shadow-color": "229, 53, 171"}
+        "title": "Goolang",
+        "imageSrc": "skills/go.png",
+        "style" : {"shadow-color": "94, 212, 244"}
     },
     {
         "title": "MongoDB",
@@ -20,13 +20,13 @@
         "style" : {"shadow-color": "77, 179, 61"}
     },
     {
-        "title": "Figma",
-        "imageSrc": "skills/figma.png",
-        "style" : {"shadow-color": "255, 114, 98"}
+        "title": "NestJs",
+        "imageSrc": "skills/nest.webp",
+        "style" : {"shadow-color": "229, 52, 54"}
     },
     {
-        "title": "C++",
-        "imageSrc": "skills/C++.png",
+        "title": "lunix",
+        "imageSrc": "skills/lunix.jpeg",
         "style" : {"shadow-color": "94, 151, 208"}
     },
     {
@@ -35,13 +35,13 @@
         "style" : {"shadow-color": "0, 139, 185"}
     },
     {
-        "title": "Sass",
-        "imageSrc": "skills/Sacss.png",
-        "style" : {"shadow-color": "204, 102, 153"}
+        "title": "Docker",
+        "imageSrc": "skills/docker.png",
+        "style" : {"shadow-color": "0, 123, 193"}
     },
     {
-        "title": "Tailwind Css",
-        "imageSrc": "skills/tailwind.png",
+        "title": "Gin-Gonic",
+        "imageSrc": "skills/gin.png",
         "style" : {"shadow-color": "56, 189, 248"}
     },
     {
