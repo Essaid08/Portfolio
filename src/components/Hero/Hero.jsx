@@ -58,12 +58,12 @@ export const Hero = () => {
                 <button onClick={downloadPDF} className={styles.contactBtn}>
                   Download CV
                 </button>
-                <button
-                  href="mailto:assaidbouhenni3@gmail.com"
+                <a
+                  href="#contact"
                   className={styles.contactBtn}
                 >
                   Contact Me
-                </button>
+                </a>
               </div>
             </ScrollAnimation>
           </div>
