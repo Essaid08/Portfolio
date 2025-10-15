@@ -14,7 +14,7 @@ const Footer = () => {
                 <div className={styles.line}></div>
                 <div className={styles.content}>
                     <div className={styles.copy}>
-                        Copyright © 2024 Assaid
+                        Copyright © 2023 Assaid
                     </div>
                     <div className={styles.medias}>
                         <a href='https://www.linkedin.com/in/said-bouhenni/' target='_blank' rel="noopener noreferrer">
